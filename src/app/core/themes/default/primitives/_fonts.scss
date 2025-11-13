@@ -1,0 +1,49 @@
+@layer primitives {
+  :root {
+    /* Font Family */
+    --font-family-urbanist: 'Urbanist', sans-serif;
+    --font-family-roboto: 'Roboto', 'Helvetica Neue', sans-serif;
+    --font-family-primeicons: 'primeicons';
+
+    /* Font Weights */
+    --font-weight-thin: 100;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Font Styles */
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+    --font-style-oblique: oblique;
+
+    /* Tamanhos de fonte */
+
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-md: 1rem;       /* 16px - base */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.75rem;   /* 28px */
+    --font-size-4xl: 1.875rem;  /* 30px */
+    --font-size-5xl: 2.25rem;   /* 36px */
+    --font-size-6xl: 2.5rem;    /* 40px */
+    --font-size-7xl: 3rem;      /* 48px */
+    --font-size-8xl: 3.375rem;  /* 54px */
+    --font-size-9xl: 3.75rem;   /* 60px */
+    --font-size-10xl: 4.375rem; /* 70px */
+
+    // line-height
+    --line-height-tight: 1.1;
+    --line-height-snug: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.625;
+    --line-height-loose: 2;
+
+  }
+}

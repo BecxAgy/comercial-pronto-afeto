@@ -1,0 +1,58 @@
+@layer primitives {
+  :root {
+
+    /* Primitive color scales (defined as hex values provided) */
+
+    /* Blue */
+    --color-blue-200: #bee3f9;
+    --color-blue-300: #84cdf5;
+    --color-blue-400: #2aaaeb;
+    --color-blue-500: #1a9add;
+    --color-blue-600: #0d7bbc;
+    --color-blue-700: #0c6298;
+
+    /* Orange (danger) */
+    --color-orange-300: #ddb194;
+    --color-orange-400: #ce8b69;
+    --color-orange-500: #c4704b;
+    --color-orange-600: #b65b40;
+    --color-orange-700: #9d4b39;
+    --color-orange-800: #7a3c32;
+    --color-orange-900: #63332b;
+    --color-orange-950: #351815;
+
+    /* Green (success) */
+    --color-green-200: #c2d9c1;
+    --color-green-300: #98bd98;
+    --color-green-400: #75a377;
+    --color-green-500: #4a7f4e;
+    --color-green-600: #37643b;
+    --color-green-700: #2c5031;
+    --color-green-800: #254029;
+
+    /* Neutral / white scale */
+    --color-white-50:  #ffffff;
+    --color-white-100: #efefef;
+    --color-white-200: #dcdcdc;
+    --color-white-300: #bdbdbd;
+    --color-white-400: #989898;
+    --color-white-500: #7c7c7c;
+    --color-white-600: #656565;
+    --color-white-700: #525252;
+    --color-white-800: #464646;
+    --color-white-900: #3d3d3d;
+    --color-white-950: #292929;
+
+    /* Optional convenience semantic fallbacks (can be remapped in semantics files)
+       These keep current usage working while we move semantic mapping to the
+       semantics/*.scss files.
+    */
+    --background: var(--color-white-50);
+    --foreground: var(--color-white-900);
+    --primary: var(--color-blue-500);
+    --primary-foreground: var(--color-white-50);
+    --destructive: var(--color-orange-500);
+    --success: var(--color-green-500);
+    --muted: var(--color-white-200);
+  }
+}

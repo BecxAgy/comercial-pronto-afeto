@@ -1,0 +1,17 @@
+@layer semantics {
+  :root {
+    --padding-3xs: var(--spacing-3xs);
+    --padding-2xs: var(--spacing-2xs);
+    --padding-xs: var(--spacing-xs);
+    --padding-sm: var(--spacing-sm);
+    --padding-base: var(--spacing-md);
+    --padding-lg: var(--spacing-lg);
+    --padding-xl: var(--spacing-xl);
+    --padding-2xl: var(--spacing-2xl);
+    --padding-3xl: var(--spacing-3xl);
+    --padding-4xl: var(--spacing-4xl);
+    --padding-5xl: var(--spacing-5xl);
+    --padding-6xl: var(--spacing-6xl);
+    --padding-7xl: var(--spacing-7xl);
+  }
+}

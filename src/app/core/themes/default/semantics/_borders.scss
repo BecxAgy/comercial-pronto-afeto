@@ -1,0 +1,94 @@
+@layer semantics {
+  :root {
+    --border-primary-color-lighter-light: var(--color-blue-200);
+    --border-primary-color-base: var(--color-blue-500);
+
+    // border-radius
+    --radius-none: 0;
+    --radius-2xs: 0.25rem;   /* 4px */
+    --radius-xs: 0.5rem;    /* 8px */
+    --radius-sm: 0.75rem;  /* 12px */
+    --radius-md: 1rem;      /* 16px */
+    --radius-lg: 1.5rem;    /* 24px */
+    --radius-xl: 2rem;      /* 32px */
+    --radius-2xl: 2.5rem;   /* 40px */
+    --radius-huge: 6.25rem; /* 100px */
+    --radius-full: 100%;  /* círculo/elipse */
+
+    // border-width
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 4px;
+    --shadow-neutral-base: var(--color-white-500);
+    --shadow-neutral-darker: var(--color-white-700);
+    --shadow-neutral-darkest: var(--color-white-900);
+
+    --shadow-primary-darker: var(--color-blue-700);
+
+    /* neutral */
+    --border-color-neutral-lightest-lighter: var(--color-white-50);
+    --border-color-neutral-lightest-light: var(--color-white-100);
+    --border-color-neutral-lightest: var(--color-white-100);
+    --border-color-neutral-lighter-light: var(--color-white-200);
+    --border-color-neutral-lighter-semi-dark: var(--color-white-200);
+    --border-color-neutral-lighter-dark: var(--color-white-300);
+    --border-color-neutral-lighter: var(--color-white-300);
+    --border-color-neutral-light: var(--color-white-400);
+    --border-color-neutral-base: var(--color-white-500);
+    --border-color-neutral-dark: var(--color-white-600);
+    --border-color-neutral-darker: var(--color-white-700);
+    --border-color-neutral-darker-light: var(--color-white-800);
+    --border-color-neutral-darker-dark: var(--color-white-900);
+    --border-color-neutral-darkest: var(--color-white-950);
+    --border-color-neutral-darkest-dark: var(--color-white-950);
+    --border-color-neutral-darkest-darker: var(--color-white-950);
+
+    /* primary */
+    --border-color-primary-lighter-lightest: var(--color-blue-200);
+    --border-color-primary-lighter-light: var(--color-blue-200);
+    --border-color-primary-lighter: var(--color-blue-200);
+    --border-color-primary-lighter-dark: var(--color-blue-300);
+    --border-color-primary-light: var(--color-blue-400);
+    --border-color-primary-base: var(--color-blue-500);
+    --border-color-primary-dark: var(--color-blue-600);
+
+    /* success */
+    --border-color-success-lightest-lighter: var(--color-green-200);
+    --border-color-success-lightest-light: var(--color-green-200);
+    --border-color-success-lightest: var(--color-green-200);
+    --border-color-success-lighter-dark: var(--color-green-300);
+    --border-color-success-lighter: var(--color-green-300);
+    --border-color-success-light: var(--color-green-400);
+    --border-color-success-base: var(--color-green-500);
+    --border-color-success-dark: var(--color-green-600);
+    --border-color-success-darker: var(--color-green-700);
+    --border-color-success-darker-light: var(--color-green-800);
+    --border-color-success-darkest: var(--color-green-800);
+
+    /* error (mapped to orange primitives) */
+    --border-color-error-lightest-lighter: var(--color-orange-300);
+    --border-color-error-lightest-light: var(--color-orange-300);
+    --border-color-error-lightest: var(--color-orange-300);
+    --border-color-error-lighter-dark: var(--color-orange-400);
+    --border-color-error-lighter: var(--color-orange-400);
+    --border-color-error-light: var(--color-orange-500);
+    --border-color-error-base: var(--color-orange-500);
+    --border-color-error-dark: var(--color-orange-600);
+    --border-color-error-darker: var(--color-orange-700);
+    --border-color-error-darker-light: var(--color-orange-800);
+    --border-color-error-darkest: var(--color-orange-900);
+
+    /* warn (mapped to orange primitives in absence of yellow) */
+    --border-color-warn-lightest-lighter: var(--color-orange-300);
+    --border-color-warn-lightest-light: var(--color-orange-300);
+    --border-color-warn-lightest: var(--color-orange-400);
+    --border-color-warn-lighter-dark: var(--color-orange-400);
+    --border-color-warn-lighter: var(--color-orange-500);
+    --border-color-warn-light: var(--color-orange-500);
+    --border-color-warn-base: var(--color-orange-600);
+    --border-color-warn-dark: var(--color-orange-700);
+    --border-color-warn-darker: var(--color-orange-800);
+    --border-color-warn-darker-light: var(--color-orange-800);
+    --border-color-warn-darkest: var(--color-orange-900);
+  }
+}

@@ -1,0 +1,29 @@
+@layer semantics {
+  :root {
+
+    --animation-duration-base: var(--speed-1s5ms);
+
+    --motion-instant: var(--speed-instant);
+    --motion-fastest-plus: var(--speed-50);
+    --motion-fastest: var(--speed-100);
+    --motion-fastest-slower: var(--speed-150);
+    --motion-faster-plus: var(--speed-200);
+    --motion-faster: var(--speed-250);
+    --motion-faster-slower: var(--speed-300);
+    --motion-fast-plus: var(--speed-350);
+    --motion-fast: var(--speed-400);
+    --motion-fast-slower: var(--speed-450);
+    --motion-base: var(--speed-500);
+    --motion-slow: var(--speed-600);
+    --motion-slower-faster: var(--speed-700);
+    --motion-slower: var(--speed-800);
+    --motion-slowest-faster: var(--speed-900);
+    --motion-slowest: var(--speed-1000);
+
+    /* Micro-interações */
+    --motion-fade: var(--motion-fastest-slower);
+    --motion-tooltip: var(--motion-faster-plus);
+    --motion-hover: var(--motion-faster-plus);
+
+  }
+}

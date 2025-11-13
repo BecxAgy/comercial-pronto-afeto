@@ -1,0 +1,91 @@
+@layer semantics {
+  :root {
+
+    --font-family-base: var(--font-family-urbanist);
+    --font-family-secondary: var(--font-family-urbanist);
+
+    --font-family-title: var(--font-family-urbanist);
+
+    --font-title-size-6xs: var(--font-size-xs);
+    --font-title-size-5xs: var(--font-size-md);
+    --font-title-size-4xs: var(--font-size-lg);
+    --font-title-size-3xs: var(--font-size-xl);
+    --font-title-size-2xs: var(--font-size-2xl);
+    --font-title-size-xs: var(--font-size-3xl);
+    --font-title-size-sm: var(--font-size-4xl);
+    --font-title-size-md: var(--font-size-5xl);
+    --font-title-size-lg: var(--font-size-6xl);
+    --font-title-size-xl: var(--font-size-7xl);
+    --font-title-size-2xl: var(--font-size-8xl);
+    --font-title-size-3xl: var(--font-size-9xl);
+    --font-title-size-4xl: var(--font-size-10xl);
+
+    --font-title-spacing-sm: var(--spacing-md);
+    --font-title-spacing-md: var(--spacing-xl);
+    --font-title-spacing-lg: var(--spacing-3xl);
+    --font-title-spacing-xl: var(--spacing-7xl);
+
+    --font-size-base: var(--font-size-md);
+    --font-body-sm: var(--font-size-sm);
+    --font-body-md: var(--font-size-base);
+    --font-body-lg: var(--font-size-lg);
+    --font-body-xl: var(--font-size-xl);
+    --font-body-2xl: var(--font-size-2xl);
+    --font-body-3xl: var(--font-size-3xl);
+    --font-body-4xl: var(--font-size-4xl);
+
+    --font-icon-size-2xs: var(--font-size-xs);
+    --font-icon-size-xs: var(--font-size-md);
+    --font-icon-size-sm: var(--font-size-lg);
+    --font-icon-size-base: var(--font-size-xl);
+    --font-icon-size-lg: var(--font-size-2xl);
+    --font-icon-size-xl: var(--font-size-3xl);
+    --font-icon-size-2xl: var(--font-size-4xl);
+    --font-icon-size-3xl: var(--font-size-5xl);
+
+    // line-height
+
+    --font-line-height-base: var(--line-height-normal);
+
+    // neutral (white scale)
+    --font-color-neutral-lightest: var(--color-white-50);
+    --font-color-neutral-lightest-light: var(--color-white-100);
+    --font-color-neutral-lighter: var(--color-white-200);
+    --font-color-neutral-lighter-dark: var(--color-white-300);
+    --font-color-neutral-light: var(--color-white-400);
+    --font-color-neutral-base: var(--color-white-500);
+    --font-color-neutral-dark: var(--color-white-600);
+    --font-color-neutral-darker: var(--color-white-700);
+    --font-color-neutral-darker-light: var(--color-white-800);
+    --font-color-neutral-darkest: var(--color-white-900);
+    --font-color-neutral-darkest-dark: var(--color-white-950);
+
+    // primary (blue)
+    --font-color-primary-lighter: var(--color-blue-200);
+    --font-color-primary-lighter-dark: var(--color-blue-300);
+    --font-color-primary-light: var(--color-blue-400);
+    --font-color-primary-base: var(--color-blue-500);
+    --font-color-primary-dark: var(--color-blue-600);
+    --font-color-primary-darkest: var(--color-blue-700);
+
+    // success (green)
+    --font-color-success-lighter: var(--color-green-200);
+    --font-color-success-lighter-dark: var(--color-green-300);
+    --font-color-success-light: var(--color-green-400);
+    --font-color-success-base: var(--color-green-500);
+    --font-color-success-dark: var(--color-green-600);
+    --font-color-success-darker: var(--color-green-700);
+    --font-color-success-darkest: var(--color-green-800);
+
+    // error/danger (orange)
+    --font-color-error-lighter: var(--color-orange-300);
+    --font-color-error-lighter-dark: var(--color-orange-400);
+    --font-color-error-light: var(--color-orange-500);
+    --font-color-error-base: var(--color-orange-600);
+    --font-color-error-dark: var(--color-orange-700);
+    --font-color-error-darker: var(--color-orange-800);
+    --font-color-error-darkest: var(--color-orange-900);
+    --font-color-error-darkest-dark: var(--color-orange-950);
+
+  }
+}

@@ -1,0 +1,11 @@
+@layer semantics {
+  :root {
+    --flex-gap-3xs: var(--spacing-3xs);
+    --flex-gap-2xs: var(--spacing-2xs);
+    --flex-gap-xs: var(--spacing-xs);
+    --flex-gap-sm: var(--spacing-sm);
+    --flex-gap-base: var(--spacing-md);
+    --flex-gap-lg: var(--spacing-lg);
+    --flex-gap-xl: var(--spacing-xl);
+  }
+}

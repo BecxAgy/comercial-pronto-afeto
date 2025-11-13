@@ -1,0 +1,33 @@
+@layer core {
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color-base);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
