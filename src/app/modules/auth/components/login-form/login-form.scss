@@ -1,0 +1,89 @@
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-lg);
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--padding-xs);
+    }
+
+    &__label {
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--font-color-neutral-darker);
+      margin-bottom: var(--padding-3xs);
+    }
+
+    &__input {
+      width: 100%;
+      padding: var(--padding-sm) var(--padding-base);
+      font-size: var(--font-size-md);
+      color: var(--font-color-neutral-darkest);
+      background: var(--bg-color-neutral-lightest-lighter);
+      border: var(--border-width-thin) solid var(--border-color-neutral-lighter-dark);
+      border-radius: var(--radius-xs);
+      outline: none;
+      transition: all var(--motion-faster-slower) ease-in-out;
+      font-family: var(--font-family-base);
+
+      &::placeholder {
+        color: var(--font-color-neutral-base);
+        font-size: var(--font-size-sm);
+      }
+
+      &:focus {
+        border-color: var(--border-color-primary-base);
+        background: var(--bg-color-neutral-lightest-lighter);
+      }
+
+      &:hover:not(:focus) {
+        border-color: var(--border-color-neutral-light);
+      }
+    }
+
+
+
+    &__forgot {
+      font-size: var(--font-size-sm);
+      color: var(--font-color-primary-base);
+      text-decoration: none;
+      font-weight: var(--font-weight-medium);
+      transition: color var(--motion-faster-slower) ease-in-out;
+
+      &:hover {
+        color: var(--font-color-primary-dark);
+        text-decoration: underline;
+      }
+    }
+
+    &__submit {
+      width: 100%;
+      padding: var(--padding-base) var(--padding-xl);
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-semibold);
+      color: var(--btn-primary-color);
+      background: var(--btn-primary-bg);
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--motion-faster-slower) ease-in-out;
+      font-family: var(--font-family-base);
+
+      &:hover:not(:disabled) {
+        background: var(--btn-primary-bg-hover);
+        transform: translateY(-1px);
+      }
+
+      &:active:not(:disabled) {
+        transform: scale(0.98);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+  }
