@@ -1,0 +1,170 @@
+@layer components {
+  :root {
+
+    // input
+
+    --form-input-bg: var(--bg-color-base);
+    --form-input-border: var(--border-width-thin) solid var(--border-color-neutral-light);
+    --form-input-border-radius: var(--radius-xs);
+    --form-input-padding: var(--padding-xs) var(--padding-base);
+    --form-input-font-color: var(--font-color-neutral-darkest-dark);
+    --form-input-font-size: var(--font-body-lg);
+    --form-input-outline: none;
+    --form-input-placeholder-size: var(--font-size-sm);
+
+    // textarea
+    --form-textarea-bg: var(--bg-color-base);
+    --form-textarea-border: var(--border-width-thin) solid var(--border-color-neutral-light);
+    --form-textarea-border-radius: var(--radius-xs);
+    --form-textarea-font-color: var(--font-color-neutral-darkest-dark);
+    --form-textarea-font-weight: var(--font-weight-semibold);
+    --form-textarea-font-size: var(--font-size-xl);
+    --form-textarea-font-family: var(--font-family-secondary);
+    --form-textarea-line-height: var(--line-height-normal);
+    --form-textarea-padding: var(--padding-xs) var(--padding-base);
+    --form-textarea-placeholder-font-style: var(--font-style-italic);
+    --form-textarea-width: 100%;
+    --form-textarea-transition: all var(--motion-faster-slower) ease-in-out;
+
+    --form-textarea-line-size: calc(var(--form-textarea-font-size) * var(--form-textarea-line-height));
+    --form-textarea-max-height: calc(var(--form-textarea-line-size) * 5);
+    --form-textarea-overflow-y: auto;
+
+    --form-textarea-max-inner-height: calc(--form-textarea-max-height + var(--padding-xs));
+
+    // p-select
+    --form-p-select-gap: var(--flex-gap-xs);
+    --form-p-select-chevron-width: auto;
+    --form-p-select-dropdown-border: var(--border-width-thin) solid var(--border-color-neutral-light);
+    --form-p-select-dropdown-radius: var(--radius-md);
+    --form-p-select-min-width: 120px;
+
+    --p-select-option-color: var(--font-color-primary-darkest-darker);
+    --p-select-option-focus-background: var(--bg-color-primary-lighter);
+    --p-select-checkmark-color: var(--font-color-primary-dark);
+
+  }
+
+  .form {
+    display: flex;
+    gap: var(--flex-gap-base);
+
+    &-col,
+    &-row {
+      display: flex;
+      gap: var(--flex-gap-base);
+    }
+
+    &-col {
+      flex-direction: column;
+    }
+
+    &-row {
+      flex-direction: row;
+    }
+
+    &.col {
+      flex-direction: column;
+    }
+  }
+
+  // input
+
+  input {
+    background: var(--form-input-bg);
+    border: var(--form-input-border);
+    border-radius: var(--form-input-border-radius);
+    padding: var(--form-input-padding);
+    color: var(--form-input-font-color);
+    font-size: var(--form-input-font-size);
+    outline: var(--form-input-outline);
+
+     &::placeholder {
+      font-size: var(--form-input-placeholder-size);
+      color: var(--font-color-neutral-base);
+    }
+  }
+
+
+
+  // radio
+
+  .radio-button {
+    input[type="radio"] {
+      display: none;
+    }
+
+    .btn {
+      i {
+        display: none;
+      }
+    }
+
+    input[type="radio"]:checked + .btn {
+      background: var(--bg-color-primary-lighter);
+      i {
+        display: inline-flex;
+      }
+    }
+  }
+
+  // textarea
+
+  textarea {
+    color: var(--form-textarea-font-color);
+    background: var(--form-textarea-bg);
+    font-family: var(--form-textarea-font-family);
+    font-size: var(--form-textarea-font-size);
+    line-height: var(--form-textarea-line-height);
+    width: var(--form-textarea-width);
+    border: var(--form-textarea-border);
+    transition: var(--form-textarea-transition);
+    padding: var(--form-textarea-padding);
+    border-radius: var(--form-textarea-border-radius);
+  }
+
+  // select
+
+  p-select {
+    gap: var(--form-p-select-gap);
+
+    .p-select-label {
+      display: flex;
+      gap: var(--form-p-select-gap);
+      color: inherit;
+      font-weight: var(--form-textarea-font-weight);
+      min-width: var(--form-p-select-min-width);
+      white-space: wrap;
+    }
+
+    .p-select-dropdown {
+      width: var(--form-p-select-chevron-width);
+      margin-left: var(--form-p-select-gap);
+    }
+
+  }
+
+  .p-select-option {
+    display: flex;
+    gap: var(--form-p-select-gap);
+    padding: var(--p-select-option-padding);
+    color: var(--p-select-option-color);
+  }
+
+  .p-select-overlay {
+    border: var(--form-p-select-dropdown-border);
+    border-radius: var(--form-p-select-dropdown-radius);
+  }
+
+  @media all and (min-width: 1024px) {
+    p-select {
+      .p-select-label {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .p-iconfield .p-inputtext:not(:first-child) {
+    padding-inline-start: calc((var(--p-form-field-padding-x) * 2) + var(--p-icon-size));
+  }
+}

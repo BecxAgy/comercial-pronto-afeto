@@ -1,0 +1,113 @@
+@layer components {
+
+  :root {
+
+    --caption-font-family: var(--font-family-secondary);
+    --caption-font-color: var(--font-color-neutral-darkest-darker);
+    --caption-font-size: var(--font-body-sm);
+    --caption-gap: var(--flex-gap-base);
+    --caption-align-items: center;
+    --caption-icon-color: var(--font-color-neutral-darker-light);
+    --caption-icon-font-family: var(--font-family-icon);
+    --caption-icon-size: var(--font-body-lg);
+
+    --title-font-color-base: var(--font-color-neutral-darkest-dark);
+    --title-font-family-base: var(--font-family-title);
+    --title-line-height-base: var(--font-line-height-base);
+    --title-font-weight-base: var(--font-weight-semibold);
+
+    --title-1-font-size-base: var(--font-title-size-md);
+    --title-1-mark-color: var(--font-color-primary-base);
+
+    --title-2-font-size-base: var(--font-title-size-sm);
+
+    --title-3-font-size-base: var(--font-title-size-xs);
+
+    --title-4-font-size-base: var(--font-title-size-2xs);
+
+    --title-5-font-size-base: var(--font-title-size-3xs);
+
+    --title-6-font-size-base: var(--font-title-size-4xs);
+    --title-6-font-size-small: var(--font-title-size-5xs);
+
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font-family-base);
+    line-height: var(--title-line-height-base);
+    font-weight: var(--title-font-weight-base);
+    color: var(--title-font-color-base);
+
+    &.marked {
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 1em;
+        background: var(--title-1-mark-color);
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+      }
+    }
+  }
+
+  h1 {
+    font-size: var(--title-2-font-size-base);
+  }
+
+  h2 {
+    font-size: var(--title-2-font-size-base);
+  }
+
+  h3 {
+    font-size: var(--title-3-font-size-base);
+  }
+
+  h4 {
+    font-size: var(--title-4-font-size-base);
+  }
+
+  h5 {
+    font-size: var(--title-5-font-size-base);
+  }
+
+  h6 {
+    font-size: var(--title-6-font-size-base);
+
+    &.small {
+      font-size: var(--title-6-font-size-small);
+    }
+  }
+
+
+
+  .caption {
+    display: flex;
+    align-items: var(--caption-align-items);
+    gap: var(--caption-gap);
+    color: var(--caption-font-color);
+    font-family: var(--caption-font-family);
+    font-size: var(--caption-font-size);
+
+    i {
+      font-family: var(--caption-icon-font-family);
+      color: var(--caption-icon-color);
+      font-size: var(--caption-icon-size);
+      min-width: var(--caption-icon-size);
+      max-width: var(--caption-icon-size);
+      min-height: var(--caption-icon-size);
+      max-height: var(--caption-icon-size);
+    }
+
+    &.clip {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

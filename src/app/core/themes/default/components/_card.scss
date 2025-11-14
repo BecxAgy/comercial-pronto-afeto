@@ -1,0 +1,30 @@
+@layer components {
+  :root {
+
+    --card-bg: var(--bg-color-base);
+    --card-border-width: var(--border-width-thin);
+    --card-border-color: var(--border-color-neutral-lighter);
+    --card-border: var(--card-border-width) solid var(--card-border-color);
+    --card-box-shadow: 0px 4px 4px 0px var(--bg-color-neutral-lighter);
+    --card-direction: column;
+    --card-gap: var(--flex-gap-sm);
+    --card-padding-x: var(--padding-lg);
+    --card-padding-y: var(--padding-base);
+    --card-padding: var(--card-padding-y) var(--card-padding-x);
+    --card-radius: var(--radius-xl);
+    --card-font-size: var(--font-body-xl);
+    --card-font-color: var(--font-color-neutral-darker-dark);
+  }
+
+  p-card{
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: var(--card-direction);
+    gap: var(--card-gap);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius) !important;
+    font-size: var(--card-font-size);
+    color: var(--card-font-color);
+  }
+
+}
