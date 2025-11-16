@@ -1,0 +1,4 @@
+{
+  "production": true,
+  "systemConfigUrl": "/system-config/settings.json"
+}
